@@ -6,7 +6,7 @@ import { AppStore } from "../../App Context/AppContext";
 import { useNavigate } from "react-router-dom";
 import SkeletonCard from "../../components/cards/SkeletonCard";
 function AllPhotos() {
-  const { allPhotos, loading, loadMore, hasMore } = useContext(AppStore);
+  const { allPhotos, loading, } = useContext(AppStore);
   const navigate = useNavigate();
   const loaderArray = Array.from({ length: 10 });
 
@@ -30,11 +30,7 @@ function AllPhotos() {
           </div>
         ))}
 
-      {hasMore && (
-        <div onClick={loadMore} className="photo-picker-title">
-          load More
-        </div>
-      )}
+  
     </div>
   );
 }
