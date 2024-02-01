@@ -1,0 +1,15 @@
+.feild{
+    width: 90%;
+    font-size: 18px; 
+    padding: 8px; 
+    border: 1px solid lightblue;
+    border-radius: 20PX;
+}
+
+h3{
+    margin: 5px 10px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: wheat;
+    
+}

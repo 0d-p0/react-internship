@@ -1,0 +1,78 @@
+.card {
+  width: 95vw;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-description {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 48vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 23.8vw;
+    height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 23.7vw;
+    height: 40vh;
+  }
+}
+
+.skeleton-loader {
+  background: linear-gradient(90deg, #535252 25%, #848282 50%, #535252 75%);
+  background-size: 200% 100%;
+  animation: loadingAnimation 1.5s infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes loadingAnimation {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}

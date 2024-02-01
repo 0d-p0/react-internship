@@ -1,0 +1,46 @@
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    : 10px;
+    margin-bottom: 10px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .react-logo {
+    height: 30px;
+    width: auto;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .menu-options {
+    display: flex;
+  }
+  
+  .menu-option {
+    padding: 0 10px;
+    cursor: pointer;
+    color: white;
+   text-decoration: none;
+  }
+  
+  .menu-option:hover {
+    text-decoration: underline;
+  }
+  
